@@ -1,0 +1,9 @@
+ {
+  "groups": {
+    "0": {
+      "on": true,
+      "bri": 255,
+      "effect": "colorloop"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "hue-scenes",
+  "version": "0.0.0",
+  "description": "manage philips hue scenes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nooblucker/hueScenes.git"
+  },
+  "keywords": [
+    "philips",
+    "hue",
+    "scenes"
+  ],
+  "author": "Sven Riecker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nooblucker/hueScenes/issues"
+  },
+  "homepage": "https://github.com/nooblucker/hueScenes"
+}
