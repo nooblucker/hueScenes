@@ -37,4 +37,21 @@ HueScenes.prototype.load = function(scene) {
   return sceneJson;
 };
 
+HueScenes.prototype.save = function(scene, state, overwriteExisting) {
+  var sceneFilename = scene.concat('.json');
+  var scenePath = path.join(this.scenesFolder, sceneFilename);
+  if (overwriteExisting || !fs.existsSync(scenePath)) {
+    try {
+      var sceneJson = JSON.stringify(state);
+      fs.writeFileSync(scenePath, sceneJson);
+      return true;
+    }
+    catch(err) {
+      console.error('could not save scene to ' + scenePath);
+      console.error(err);
+      throw err;
+    }
+  } else console.error('scene already exists. overwrite by providing true as third argument.');
+};
+
 module.exports = new HueScenes();
